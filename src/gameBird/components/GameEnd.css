@@ -1,0 +1,56 @@
+/* Game Over Page Container */
+.game-over-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url("/bird_images/Background-Cloud.jpg") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Centered Game Over Content */
+.game-over-content {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+  color: white;
+  font-family: "Arial", sans-serif;
+  width: 400px;
+}
+
+/* Game Over Title */
+.game-over-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.7);
+}
+
+/* Score Styling */
+.score-bird {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffcc00;
+  text-shadow: 1px 1px 10px rgba(255, 204, 0, 0.8);
+}
+
+/* Play Again Button */
+.play-again-btn {
+  background: #ff5722;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+.play-again-btn:hover {
+  background: #e64a19;
+}

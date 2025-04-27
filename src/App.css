@@ -1,0 +1,16 @@
+html,
+body {
+  overflow: hidden; /* Prevent scrolling */
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.word-game-container {
+  position: fixed;
+  width: 300vw; /* 3x normal size */
+  height: 300vh; /* 3x normal size */
+  transform: scale(0.33); /* Force 33% scaling */
+  transform-origin: top left;
+}

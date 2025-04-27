@@ -1,0 +1,65 @@
+.car {
+  position: absolute;
+  bottom: 0;
+  width: 200px;
+  height: auto;
+  transition: left 0.3s ease-in-out, transform 0.2s ease-in-out;
+  z-index: 10;
+  border-radius: 8px;
+  transform: translateX(-50%);
+}
+
+/* Left lane */
+.car.left {
+  left: 20%;
+}
+
+/* Center lane */
+.car.center {
+  left: 55%;
+  transform: translateX(-50%);
+}
+
+/* Right lane */
+.car.right {
+  left: 87%;
+}
+
+/* Car image transition */
+.car-image {
+  width: 150px;
+  height: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.car:hover .car-image {
+  transform: scale(1.05);
+}
+
+/* Responsive sizes for different screen widths */
+@media (max-width: 1200px) {
+  .car {
+    width: 140px;
+  }
+  .car-image {
+    width: 100px;
+  }
+}
+
+@media (max-width: 800px) {
+  .car {
+    width: 100px;
+  }
+  .car-image {
+    width: 70px;
+  }
+}
+
+@media (max-width: 400px) {
+  .car {
+    width: 80px;
+  }
+  .car-image {
+    width: 40px;
+  }
+}

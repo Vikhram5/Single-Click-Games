@@ -1,0 +1,106 @@
+/* Advanced Road.css */
+.road-container {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 45vw;
+    height: 100vh;
+    transform: translateX(-50%);
+    overflow: hidden;
+    z-index: -1;
+    background: linear-gradient(to bottom, #4a4a4a, #2c2c2c);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.8);
+}
+
+/* Road Body */
+.road {
+    position: absolute;
+    width: 100%;
+    height: 200%; /* Increase the height of the road for better scrolling */
+    background: #2c2c2c; /* Main road color */
+    overflow: hidden;
+    animation: scrollDown linear infinite;
+}
+
+/* Scrolling Animation */
+@keyframes scrollDown {
+    0% {
+        top: -20%; /* Start above the screen */
+    }
+    100% {
+        top: 0%; /* Scroll down to the bottom */
+    }
+}
+
+/* Lane Dividers */
+.road::before,
+.road::after,
+.road .middle-lane {
+    content: '';
+    position: absolute;
+    width: 4px; /* Divider width */
+    height: 100%;
+    background: repeating-linear-gradient(
+        to bottom,
+        white,
+        white 20px,
+        transparent 20px,
+        transparent 40px
+    );
+    z-index: 2;
+    animation: scrollDown 5s linear infinite;
+}
+
+.road::before {
+    left: 33.33%; /* First lane divider */
+    transform: translateX(-50%);
+}
+
+.road::after {
+    left: 66.66%; /* Second lane divider */
+    transform: translateX(-50%);
+}
+
+.road .middle-lane {
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.8;
+}
+
+/* Road Container's Edge Highlights */
+.road-container::before,
+.road-container::after {
+    content: '';
+    position: absolute;
+    width: 6px; 
+    height: 100%;
+    background: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    z-index: 3;
+}
+
+.road-container::before {
+    left: 0; 
+}
+
+.road-container::after {
+    right: 0; 
+}
+
+/* Pause State */
+.paused .road,
+.paused .road::before,
+.paused .road::after,
+.paused .road .middle-lane {
+    animation-play-state: paused;
+}
+
+.road::before,
+.road::after,
+.road .middle-lane {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.road-container {
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.9), 0 0 30px rgba(255, 255, 255, 0.1);
+}

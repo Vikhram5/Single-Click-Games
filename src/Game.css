@@ -1,0 +1,223 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Container */
+.start-container {
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: slideDown 1s ease forwards;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-image: url("/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Animation for container */
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Typewriter effect */
+.start-typewriter {
+  font-size: 1.5rem;
+  font-family: 'Orbitron';
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #ffffff;
+  animation: fadeIn 1.5s ease-in forwards;
+}
+
+/* Animation for text */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Loader Container */
+.start-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+/* Cards Container */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Individual Card */
+.start-card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 250px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Card Hover Effect */
+.start-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Active Effect */
+.start-active {
+  transform: scale(1.05);
+  border: 5px solid #ffeb3b;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2),
+              0 0 15px 5px rgba(255, 235, 59, 0.7),
+              0 0 30px 10px rgba(255, 235, 59, 0.5);
+}
+
+/* Card Image */
+.start-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-out;
+}
+
+/* Image Hover & Active Effect */
+.start-card:hover img,
+.start-active img {
+  transform: scale(1.1);
+}
+
+/* Card Title */
+.start-card h2 {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+  padding: 0 10px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* More specific selector to override Ant Design's default styles */
+.start-card .ant-card-meta .ant-card-meta-title {
+  color: #ffeb3b; /* Change to your desired color */
+  font-weight: 600;
+  font-size: 25px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+
+/* Card Description */
+.start-card p {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  color: #ddd;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0 10px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .start-typewriter {
+    font-size: 1.3rem;
+  }
+
+  .start-card {
+    width: 220px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .start-typewriter {
+    font-size: 1.2rem;
+  }
+
+  .start-card {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .cards-container {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .start-typewriter {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+
+  .start-card {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .start-card h2 {
+    font-size: 1rem;
+    bottom: 60px;
+  }
+}

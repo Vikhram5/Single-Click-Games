@@ -1,0 +1,26 @@
+.letter {
+    position: absolute;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(145deg, #ff416c, #ff4b2b);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    line-height: 80px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3),
+                inset -5px -5px 10px rgba(255, 255, 255, 0.2),
+                inset 5px 5px 10px rgba(0, 0, 0, 0.3);
+    transform: perspective(500px) rotateX(15deg) rotateY(5deg);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .letter:hover {
+    transform: perspective(500px) rotateX(10deg) rotateY(0deg) scale(1.1);
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.5),
+                inset -3px -3px 8px rgba(255, 255, 255, 0.2),
+                inset 3px 3px 8px rgba(0, 0, 0, 0.3);
+  }
+  

@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+[src="/spritesheet.png"] {
+  /* border: 10px solid red; */
+}
+
+:root,
+html,
+body,
+#root {
+  overflow: hidden;
+}
+
+.App {
+  font-family: sans-serif;
+}
+
+.left {
+  transform: rotateY(180deg);
+}
+
+* {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+}
+

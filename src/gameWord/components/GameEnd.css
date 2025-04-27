@@ -1,0 +1,61 @@
+
+.wordgame-end-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("/images/back5.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+  
+  .wordgame-end-card {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    width: 400px;
+    z-index: 1;
+  }
+  
+  .wordgame-over-title {
+    font-size: 3rem;
+    color: #ff4757;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .wordgame-end-text {
+    font-size: 1.2rem;
+    color: #f1f1f1;
+    margin-bottom: 20px;
+  }
+  
+  .wordrestart-button {
+    background: #ff6b81;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .wordrestart-button:hover {
+    background: #ff4757;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #ff4757;
+  }
+  
+  
+  @keyframes particles {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+  }
+  

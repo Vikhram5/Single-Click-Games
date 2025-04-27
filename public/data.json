@@ -1,0 +1,166 @@
+{
+    "selected_image": "back5.jpg",
+    "selected_character": "spritesheet.png",
+    "words": [
+        {
+            "word": "LION",
+            "emoji": "\ud83e\udd81"
+        },
+        {
+            "word": "TIGER",
+            "emoji": "\ud83d\udc2f"
+        },
+        {
+            "word": "ELEPHANT",
+            "emoji": "\ud83d\udc18"
+        },
+        {
+            "word": "MONKEY",
+            "emoji": "\ud83d\udc12"
+        },
+        {
+            "word": "ZEBRA",
+            "emoji": "\ud83e\udd93"
+        },
+        {
+            "word": "GIRAFFE",
+            "emoji": "\ud83e\udd92"
+        },
+        {
+            "word": "BEAR",
+            "emoji": "\ud83d\udc3b"
+        },
+        {
+            "word": "PANDA",
+            "emoji": "\ud83d\udc3c"
+        },
+        {
+            "word": "KANGAROO",
+            "emoji": "\ud83e\udd98"
+        },
+        {
+            "word": "KOALA",
+            "emoji": "\ud83d\udc28"
+        },
+        {
+            "word": "HORSE",
+            "emoji": "\ud83d\udc34"
+        },
+        {
+            "word": "UNICORN",
+            "emoji": "\ud83e\udd84"
+        },
+        {
+            "word": "DEER",
+            "emoji": "\ud83e\udd8c"
+        },
+        {
+            "word": "RABBIT",
+            "emoji": "\ud83d\udc07"
+        },
+        {
+            "word": "CAMEL",
+            "emoji": "\ud83d\udc2b"
+        },
+        {
+            "word": "LLAMA",
+            "emoji": "\ud83e\udd99"
+        },
+        {
+            "word": "COW",
+            "emoji": "\ud83d\udc2e"
+        },
+        {
+            "word": "PIG",
+            "emoji": "\ud83d\udc37"
+        },
+        {
+            "word": "SHEEP",
+            "emoji": "\ud83d\udc11"
+        },
+        {
+            "word": "GOAT",
+            "emoji": "\ud83d\udc10"
+        },
+        {
+            "word": "WOLF",
+            "emoji": "\ud83d\udc3a"
+        },
+        {
+            "word": "FOX",
+            "emoji": "\ud83e\udd8a"
+        },
+        {
+            "word": "DOG",
+            "emoji": "\ud83d\udc36"
+        },
+        {
+            "word": "CAT",
+            "emoji": "\ud83d\udc31"
+        },
+        {
+            "word": "MOUSE",
+            "emoji": "\ud83d\udc2d"
+        },
+        {
+            "word": "HEDGEHOG",
+            "emoji": "\ud83e\udd94"
+        },
+        {
+            "word": "BAT",
+            "emoji": "\ud83e\udd87"
+        },
+        {
+            "word": "TURTLE",
+            "emoji": "\ud83d\udc22"
+        },
+        {
+            "word": "FROG",
+            "emoji": "\ud83d\udc38"
+        },
+        {
+            "word": "SNAKE",
+            "emoji": "\ud83d\udc0d"
+        },
+        {
+            "word": "CHICKEN",
+            "emoji": "\ud83d\udc14"
+        },
+        {
+            "word": "DUCK",
+            "emoji": "\ud83e\udd86"
+        },
+        {
+            "word": "EAGLE",
+            "emoji": "\ud83e\udd85"
+        },
+        {
+            "word": "OWL",
+            "emoji": "\ud83e\udd89"
+        },
+        {
+            "word": "SWAN",
+            "emoji": "\ud83e\udd9a"
+        },
+        {
+            "word": "DOLPHIN",
+            "emoji": "\ud83d\udc2c"
+        },
+        {
+            "word": "WHALE",
+            "emoji": "\ud83d\udc33"
+        },
+        {
+            "word": "SHARK",
+            "emoji": "\ud83e\udd88"
+        },
+        {
+            "word": "OCTOPUS",
+            "emoji": "\ud83d\udc19"
+        },
+        {
+            "word": "CRAB",
+            "emoji": "\ud83e\udd80"
+        }
+    ]
+}

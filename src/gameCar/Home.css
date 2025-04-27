@@ -1,0 +1,55 @@
+.homec-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("/car_images/car_background.jpg") no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.homec-content {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px 50px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+}
+
+.homec-content h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.typewriter1-container {
+  margin: 20px 0;
+  font-size: 1.2rem;
+  color: #e6f7ff;
+  font-weight: 500;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.startc-button {
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.startc-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 10px 20px rgba(255, 126, 95, 0.4);
+}
+
+.startc-button:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}

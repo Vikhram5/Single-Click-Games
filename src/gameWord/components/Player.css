@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+.left {
+  transform: rotateY(180deg);
+}
+
+.word-player-container {
+  position: absolute;
+  transition: all 0.1s linear;
+}
+

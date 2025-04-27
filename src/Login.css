@@ -1,0 +1,124 @@
+.login-keypad-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa, #80deea, #26c6da);
+  background-size: 400% 400%;
+  animation: backgroundShift 15s ease infinite;
+}
+
+@keyframes backgroundShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.login-keypad-card {
+  width: 560px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  background-color: #ffffffcc;
+  backdrop-filter: blur(10px);
+}
+
+.login-keypad-title {
+  text-align: center;
+  color: #007c91;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.login-keypad-input {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.login-keypad-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.login-keypad-key {
+  background-color: #5067fb;
+  border: 2px solid #ccefff;
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.login-keypad-key:hover {
+  background-color: #e0f7fa;
+  transform: scale(1.05);
+}
+
+.login-keypad-key.active {
+  background-color: #4ef775;
+  color: white;
+  transform: scale(1.1);
+}
+
+.login-keypad-login-btn {
+  grid-column: span 3;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 15px;
+  background-color: #8be0ff;
+  border: 2px solid #c8e6c9;
+  transition: all 0.2s ease-in-out;
+}
+
+.login-keypad-login-btn:hover {
+  background-color: #c8e6c9;
+}
+
+.login-keypad-login-btn.active {
+  background-color: #4caf50;
+  color: white;
+  transform: scale(1.05);
+}
+
+.login-keypad-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-keypad-clear-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-keypad-clear-btn:hover {
+  background-color: #d9363e;
+}
+
+.login-keypad-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust for 3 columns */
+  gap: 10px;
+  padding-top: 20px;
+}

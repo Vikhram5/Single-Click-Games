@@ -1,0 +1,88 @@
+.flightinstructions-container {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/plane_images/Instructions.jpg"); /* Set your background image path */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  overflow: hidden;
+  z-index: 999;
+  animation: flightinstructionsFadeIn 1s ease-in-out;
+}
+
+@keyframes flightinstructionsFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.flightinstructions-content {
+  max-width: 600px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.75); /* Enhanced semi-transparent background */
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  animation: flightinstructionsRiseIn 1s ease-out;
+}
+
+@keyframes flightinstructionsRiseIn {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.flightinstructions-title {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.6);
+  letter-spacing: 2px;
+}
+
+.flightinstructions-text {
+  font-size: 22px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+}
+
+.flightinstructions-btn {
+  padding: 18px 50px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.flightinstructions-btn:hover {
+  background: linear-gradient(135deg, #0066cc, #00b3cc);
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.flightinstructions-btn:active {
+  transform: translateY(2px);
+}

@@ -1,0 +1,42 @@
+{
+    "🐶": {
+        "question": "Which pet is known as man's best friend?",
+        "answer": "Dog"
+    },
+    "🐱": {
+        "question": "Which animal purrs and chases mice?",
+        "answer": "Cat"
+    },
+    "🐘": {
+        "question": "Which large animal has a trunk?",
+        "answer": "Elephant"
+    },
+    "🦁": {
+        "question": "Which animal is called the king of the jungle?",
+        "answer": "Lion"
+    },
+    "🐼": {
+        "question": "Which black and white animal loves bamboo?",
+        "answer": "Panda"
+    },
+    "🚗": {
+        "question": "Common vehicle with four wheels used for driving?",
+        "answer": "Car"
+    },
+    "✈️": {
+        "question": "Which vehicle flies in the sky and takes people across countries?",
+        "answer": "Airplane"
+    },
+    "🚲": {
+        "question": "Two-wheeled vehicle you pedal to move?",
+        "answer": "Bicycle"
+    },
+    "🕰️": {
+        "question": "Used to check the time, often found on a wall?",
+        "answer": "Clock"
+    },
+    "🎸": {
+        "question": "Musical instrument with strings that you strum?",
+        "answer": "Guitar"
+    }
+}

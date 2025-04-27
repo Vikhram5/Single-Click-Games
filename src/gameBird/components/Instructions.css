@@ -1,0 +1,43 @@
+.instructions-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url('/bird_images/Background-Cloud.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+  padding: 30px;
+  border-radius: 15px;
+  color: white;
+  max-width: 500px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.button-group button {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  background: #ffcc00;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-group button:hover {
+  background: #ffaa00;
+}

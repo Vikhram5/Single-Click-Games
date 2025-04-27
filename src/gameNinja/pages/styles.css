@@ -1,0 +1,31 @@
+.emoji-container {
+    position: absolute;
+    bottom: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 60%;
+    font-size: 100px;
+    animation: fadeInOut 10s ease-out;
+    z-index: 999;
+  }
+  
+  /* Animation */
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+      transform: translateX(-50%) scale(0.8);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(-50%) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-50%) scale(0.8);
+    }
+  }
+  

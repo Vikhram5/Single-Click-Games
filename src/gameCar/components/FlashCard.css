@@ -1,0 +1,51 @@
+
+.flashcard {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 40px; 
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3), 0 15px 30px rgba(0, 0, 0, 0.2);
+  z-index: 10; 
+  text-align: center; 
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 400px; 
+  height: auto;
+}
+
+.flashcard h2 {
+  margin: 0 0 15px; 
+  font-weight: bold; 
+  color: #333; 
+  font-size: 24px;
+}
+
+.flashcard p {
+  font-size: 20px; 
+  margin-bottom: 15px; 
+}
+
+.flashcard button {
+  margin-top: 15px; 
+  padding: 15px 30px; 
+  background-color: #007bff; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.2s, background-color 0.2s; 
+}
+
+.flashcard button:hover {
+  background-color: #0056b3; 
+  transform: translateY(-2px); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.flashcard:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 25px 50px rgba(0, 0, 0, 0.3);
+}
